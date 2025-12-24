@@ -78,7 +78,7 @@ async def pw_mobile(app, message):
     lol = await app.ask(message.chat.id, text="**ENTER YOUR PW MOBILE NO. WITHOUT COUNTRY CODE.**")
     phone_no = lol.text
     await lol.delete()
-    await get_otp(message, phone_no)
+    
     lol2 = await app.ask(message.chat.id, text="**ENTER YOUR OTP SENT ON YOUR MOBILE NO.**")
     otp = lol2.text
     await lol2.delete()
